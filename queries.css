@@ -16,6 +16,8 @@
     }
 
     .hero-box-logo {
+        max-height: 30rem;
+        grid-column: 5 / 14;
     }
 
     .hero-btn {
@@ -55,6 +57,13 @@
     }
 
     .hero-box-logo {
+        max-height: 35rem;
+        grid-column: 3 / 16;
+        grid-row: 3 / 13;
+        z-index: 10;
+        margin-top: -2.4rem;
+        display: flex;
+        justify-content: center;
     }
 
     .hero-text-box-2 {
@@ -216,7 +225,7 @@
     }
     
     .store-4-call-us {
-        grid-column: 13 / 21;
+        grid-column: 13 / 17;
         grid-row: 33 / 36;
     }
     
@@ -334,7 +343,9 @@
 /* HEADER */
 
     .hero-box-logo {
-
+        max-height: 20rem;
+        grid-column: 4 / 17;
+        grid-row: 6 / 9;
     }
 
     .hero-text-box-2 {
@@ -367,12 +378,10 @@
     }
 
     /* ABOUT PAGE */
-    
     .about-us-container{
-        padding-top: 20vh;
+        grid-template-rows: 15vh 10vh 30vh minmax(min-content, 30vh);
     }
 
-    /*
     .about-us-heading {
         grid-row: 2 /3;
     }
@@ -390,16 +399,12 @@
         justify-content: center;
     }
 
-     */
     
     .about-us-text{
-        display: block;
         grid-row: 4 / 5;
         padding: 2rem;
     
     }
-
-   
     
     .franchise-container {
         padding-top: 20vh;
@@ -407,25 +412,6 @@
 
     .catering-container {
         padding-top: 20vh;
-    }
-
-    .locations-container {
-        padding-top: 20vh;
-    }
-
-    .location-buttons {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-    }
-
-    .location-btn-menu {
-        width: 30%;
-    }
-
-    .location-btn-catering {
-        width: 40%;
     }
 }
 
@@ -449,7 +435,9 @@
     }
 
     .hero-box-logo {
-
+        height: 18rem;
+        grid-column: 4 / 15;
+        grid-row: 6 / 9;
     }
 
     
@@ -610,7 +598,7 @@
     
     
     .store-4-call-us {
-        grid-column: 2 / 21;
+        grid-column: 2 / 12;
         grid-row: 33 / 34;
         font-size: 2.6rem !important;
     }
@@ -632,7 +620,9 @@
 @media only screen and (max-width: 450px) {
 
     .hero-box-logo {
-
+        height: 14rem;
+        grid-column: 4 / 15;
+        grid-row: 7 / 9;
     }
 
     .hero-btn {

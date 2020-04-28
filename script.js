@@ -2,10 +2,6 @@ $(document).ready(function() {
     
     /*Display either Desktop version or Mobile Version when first visiting the site */
     
-    function triggerNav() {
-        
-    }
-
     $( window ).width(function() {
         if($(window).width() <=751){
             $('nav').addClass("sticky");
