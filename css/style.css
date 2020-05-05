@@ -215,18 +215,36 @@ h2 {
 
 
 /* HERO BOX */
+
+
 .hero-box {
+    position: relative;
     display: grid;
     grid-template-rows: repeat(16, minmax(max-content,1fr));
     grid-template-columns: repeat(16, 1fr);
     color: var(--color-grey-light-1);
+    height: 85vh;
+    
+}
+
+.hero-box-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     background-size: cover;
     background-position: center;
-    height: 85vh;
     background-attachment: fixed;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    filter: blur(1px);
+
 }
+
+
+
 
 .hero-box-logo {
     height: 35rem;
