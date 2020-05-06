@@ -660,7 +660,13 @@ h2 {
     padding: 0 !important;
 }
 
-/* ABOUT US / FRANCHISE */
+/* ABOUT US / FRANCHISE / CATERING*/
+
+.box-shadow {
+    -webkit-box-shadow: -15px 8px 5px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: -15px 8px 5px 0px rgba(0,0,0,0.55);
+box-shadow: -15px 8px 5px 0px rgba(0,0,0,0.55);
+}
 
 .container {
     height: 60vh;
