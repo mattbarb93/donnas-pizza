@@ -23,19 +23,53 @@ $(document).ready(function() {
 
     /* On Click of Menu button, display the menu options */
       $(".js--nav-icon").click(function() {
-        var nav = $("#Main-Nav");  
-        var icon = $(".js--nav-icon i");
 
-        nav.toggle(300);
+
+
+        const hamburgerMenu = document.querySelector('ion-icon')
+
+        //Change ion icon based on the user's click. If menu is open, the icon will be an X, so the user can close it.
+
+        if(hamburgerMenu.name === "menu-outline"){
+          hamburgerMenu.name = "close-outline"
+        }
+
+        else{
+          hamburgerMenu.name = "menu-outline"
+        }
         
-        /* On Mobile nav, X button appears after clicking on the Menu button  */ 
-        if (icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-            icon.removeClass('ion-navicon-round');
-        } else {
-            icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round');
-        }        
+
+
+
+
+          let nav = document.getElementById()
+
+          nav.toggle(300);
+
+
+
+
+
+
+
+
+
+
+
+
+        // let nav = $("#Main-Nav");  
+        // let icon = $(".js--nav-icon i");
+
+        // nav.toggle(300);
+        
+        // /* On Mobile nav, X button appears after clicking on the Menu button  */ 
+        // if (icon.hasClass('md hydrated')) {
+        //     icon.addClass('ion-close-round');
+        //     icon.removeClass('md hydrated');
+        // } else {
+        //     icon.addClass('ion-navicon-round');
+        //     icon.removeClass('ion-close-round');
+        // }        
       }),
 
     /* On Pizza Popup, carrosel with fade effect to switch slides */
