@@ -55,6 +55,7 @@ h2 {
     margin: 0 auto;
 }
 
+
 .heading {
     font-size: 4.4rem;
     font-weight: 500;
@@ -111,6 +112,25 @@ h2 {
     justify-content: space-evenly;
 }
 
+.navbar {
+    height: 15vh;
+    background-image: linear-gradient(to right bottom, var(--color-grey-dark-2), var(--color-black));
+    position: relative;
+}
+
+.navbar-desktop{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.navbar-mobile{
+    display: none;
+}
+
 /*Regular Nav */
 
 .main-nav li{
@@ -131,6 +151,8 @@ h2 {
     border-bottom: 2px solid var(--color-tertiary);
 }
 
+/*
+
 .logo{
     display: none;
 }
@@ -147,10 +169,11 @@ h2 {
     margin-right: 6rem;
 }
 
+*/
 
 /* Sticky Nav */
 
-
+/*
 .sticky .logo{
     display: flex;
     height: 10vh;
@@ -170,7 +193,7 @@ h2 {
 
 
 .sticky .main-nav {
-    display: none;
+    display: block;
     flex-wrap: wrap;
     height: 0;
     margin: 0 auto;
@@ -182,11 +205,19 @@ h2 {
 }
 
 
+.sticky .main-nav ul{
+    display: flex;
 
+
+}
 
 .sticky .main-nav li{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 10vh;
+
 
     background-color: var(--color-grey-dark-2);
     border-bottom: 1px solid var(--color-grey-light-1);
@@ -213,7 +244,7 @@ h2 {
     border-bottom: none;
 }
 
-
+*/
 /* HERO BOX */
 
 
