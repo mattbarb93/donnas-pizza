@@ -104,7 +104,10 @@ h2 {
     justify-content: space-between;
     z-index: 1000;
 }
+
+
 .main-nav{
+
     display: flex;
     width: 100%;
     margin: 0 auto;
