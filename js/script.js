@@ -23,30 +23,23 @@ $(document).ready(function() {
 
     /* On Click of Menu button, display the menu options */
 
-      function displayMenu() {
-        const menuIcon = document.querySelector('.main-nav')
-
-        menuIcon.style.display = '';
-      }
+      
       $(".js--nav-icon").click(function() {
 
-        const nav = document.querySelector('#Main-Nav')
-        const hamburgerMenu = document.querySelector('ion-icon')
-        const mainMenu = document.querySelector('.icon-right');
+        const hamburgerMenu = document.querySelector('ion-icon');
+        const menuIcon = document.getElementById('Main-Nav-Mobile').getElementsByClassName('main-nav-mobile');
 
         //Change ion icon based on the user's click. If menu is open, the icon will be an X, so the user can close it.
 
         if(hamburgerMenu.name === "menu-outline"){
           hamburgerMenu.name = "close-outline";
-          nav.style.display = 'block';
-          mainMenu.style.display = 'block';
+          
         }
 
         else{
           hamburgerMenu.name = "menu-outline";
-          nav.style.display = "none";
-          mainMenu.style.display = "none";
         }
+
 
 
         
@@ -90,3 +83,9 @@ $(document).ready(function() {
     /* Mobile navigation */
    
 });
+
+function displayMenu() {
+  const menuIcon = document.querySelector('.menu-item-mobile')
+
+  menuIcon.classList.remove("display");
+}

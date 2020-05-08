@@ -373,7 +373,7 @@
         
     }
 
-    .main-nav{
+    .main-nav-mobile{
         display: none;
         position: relative;
         flex-direction: column;
