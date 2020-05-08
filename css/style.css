@@ -1201,9 +1201,6 @@ footer {
         transform: translateX(10rem);
     }
 
-    80% {
-        transform: translateX(-1rem);
-    }
 
     100% {
         opacity: 1;
