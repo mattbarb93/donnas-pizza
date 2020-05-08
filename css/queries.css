@@ -374,15 +374,15 @@
     }
 
     .hidden-menu{
-        
-        
         flex-direction: column;
         padding-top: 15vh;
         background-color: grey;
         width: 50vw;
         left: 0;
         top: 0;
+        animation: moveInRight .75s;
     }
+
 
     .main-nav-mobile{
         
