@@ -374,6 +374,7 @@
     }
 
     .hidden-menu{
+        display: none;
         flex-direction: column;
         padding-top: 89vh;
         height: 190vh; /*why 190vh I'm still not sure */

@@ -24,10 +24,10 @@ $(document).ready(function() {
     /* On Click of Menu button, display the menu options */
 
       
-      $(".js--nav-icon").click(function() {
+      $(".icon-right").click(function() {
 
         const hamburgerMenu = document.querySelector('ion-icon');
-        const menuIcon = document.getElementById('Main-Nav-Mobile').getElementsByClassName('main-nav-mobile');
+
         const hiddenMenu = document.querySelector('.hidden-menu')
 
 
@@ -91,9 +91,3 @@ $(document).ready(function() {
     /* Mobile navigation */
    
 });
-
-function displayMenu() {
-  const menuIcon = document.querySelector('.menu-item-mobile')
-
-  menuIcon.classList.remove("display");
-}
