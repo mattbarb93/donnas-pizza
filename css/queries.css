@@ -344,7 +344,7 @@
         height: 15vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -373,25 +373,33 @@
         
     }
 
+    .hidden-menu{
+        
+        
+        flex-direction: column;
+        padding-top: 15vh;
+        background-color: grey;
+        width: 50vw;
+        left: 0;
+        top: 0;
+    }
+
     .main-nav-mobile{
-        display: none;
-        position: relative;
+        
+        /* position: relative;
         flex-direction: column;
         height: 100vh;
         background-color: grey;
         width: 50vw;
         left: 100%;
-        top: 0;
+        top: 0; */
     }
 
-    .main-nav li{
+    .main-nav-mobile li{
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 10vh;
-    
-    
         border-bottom: 1px solid var(--color-grey-light-1);
     }
     

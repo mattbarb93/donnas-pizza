@@ -101,7 +101,7 @@ h2 {
     background-image: linear-gradient(to right bottom, var(--color-grey-dark-2), var(--color-black));
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     z-index: 1000;
 }
 

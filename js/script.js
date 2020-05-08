@@ -9,9 +9,9 @@ $(document).ready(function() {
     //     else $('nav').removeClass("sticky");
     //   }),
 
-    /* For the sticky navigation to appear whenever the media query hits */
+    // /* For the sticky navigation to appear whenever the media query hits */
 
-    /*PS: I have no idea why it only applies 17px below the resolution I set to. Go back to check that out later */
+    // /*PS: I have no idea why it only applies 17px below the resolution I set to. Go back to check that out later */
     
     // $( window ).resize(function() {
     //     if($(window).width() <=751){
@@ -28,16 +28,24 @@ $(document).ready(function() {
 
         const hamburgerMenu = document.querySelector('ion-icon');
         const menuIcon = document.getElementById('Main-Nav-Mobile').getElementsByClassName('main-nav-mobile');
+        const hiddenMenu = document.querySelector('.hidden-menu')
+
 
         //Change ion icon based on the user's click. If menu is open, the icon will be an X, so the user can close it.
 
         if(hamburgerMenu.name === "menu-outline"){
-          hamburgerMenu.name = "close-outline";
+          hamburgerMenu.name = "close-outline",
+          hiddenMenu.style.display = 'inherit';
+          
+
           
         }
 
         else{
           hamburgerMenu.name = "menu-outline";
+          
+          hiddenMenu.style.display = 'none';
+
         }
 
 
