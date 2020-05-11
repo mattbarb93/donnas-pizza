@@ -383,6 +383,7 @@
         left: 0;
         top: 0;
         animation: moveInRight .75s;
+        z-index: 10000;
     }
 
 
