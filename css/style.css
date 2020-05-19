@@ -1094,25 +1094,33 @@ footer {
 .popup-close:visited {
     color: var(--color-grey-dark-2);
     position: absolute;
-    top: -3rem;
-    right: .5rem;
-    font-size: 8rem;
+    top: -2rem;
+    right: 1.5rem;
+    font-size: 6rem;
     text-decoration: none;
     display: inline-block;
 }
 
-.next-slide:link,
-.next-slide:visited {
-    color: var(--color-grey-dark-2);
+
+.arrow-right {
     position: absolute;
-    top: -3rem;
-    right: .5rem;
-    font-size: 8rem;
-    text-decoration: none;
-    display: inline-block;
+    color: var(--color-grey-dark-2);
+    font-size: 6rem;
+    top: 30%;
+    right: 0;
+  }
+
+.arrow-left {
+    position: absolute;
+    color: var(--color-grey-dark-2);
+    font-size: 6rem;
+    top: 30%;
+    left: 0;
 }
 
-.popup-close:hover {
+.popup-close:hover,
+.arrow-right:hover,
+.arrow-left:hover {
     color: var(--color-secondary-dark);
 }
 
