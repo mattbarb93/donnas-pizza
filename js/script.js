@@ -1,3 +1,13 @@
+const slideName = document.querySelector('.slide-name')
+const slideImage = document.querySelector('.slide-image')
+const slideDescription = document.querySelector('.slide-description')
+const slides = document.getElementsByClassName('popup-slide')
+
+let slidesCounter = 1;
+
+
+
+
 $(document).ready(function () {
 
   /*Display either Desktop version or Mobile Version when first visiting the site */
@@ -74,3 +84,24 @@ $(document).ready(function () {
   /* Mobile navigation */
 
 });
+
+//Increment or decrement the counter on slides, depending on whether the user clicked on the left or right slide
+function changeSlide(n) {
+  currentSlide(slidesCounter += n)
+}
+
+function currentSlide(n) {
+  
+  console.log("length: " + slides.length)
+  //If last slide is reached, go back to the first
+  if(slidesCounter > slides.length){
+    slidesCounter = 1;
+    console.log(slidesCounter)
+  }
+  //If you try to go back on the first slide, go to the last one
+  if (slidesCounter < 1) {
+    slidesCounter = slides.length
+  }
+
+
+}
