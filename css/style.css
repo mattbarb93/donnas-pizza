@@ -1101,6 +1101,17 @@ footer {
     display: inline-block;
 }
 
+.next-slide:link,
+.next-slide:visited {
+    color: var(--color-grey-dark-2);
+    position: absolute;
+    top: -3rem;
+    right: .5rem;
+    font-size: 8rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .popup-close:hover {
     color: var(--color-secondary-dark);
 }
