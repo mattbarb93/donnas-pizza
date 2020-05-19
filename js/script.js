@@ -103,5 +103,30 @@ function currentSlide(n) {
     slidesCounter = slides.length
   }
 
-
+  if(slidesCounter === 1){
+    slides[0].style.display = "block"
+    slides[1].style.display = "none"
+    slides[2].style.display = "none"
+    slides[3].style.display = "none"
+  }
+  if(slidesCounter === 2){
+    slides[0].style.display = "none"
+    slides[1].style.display = "block"
+    slides[2].style.display = "none"
+    slides[3].style.display = "none"
+  }
+  if(slidesCounter === 3){
+    slides[0].style.display = "none"
+    slides[1].style.display = "none"
+    slides[2].style.display = "block"
+    slides[3].style.display = "none"
+  }
+  if(slidesCounter === 4){
+    slides[0].style.display = "none"
+    slides[1].style.display = "none"
+    slides[2].style.display = "none"
+    slides[3].style.display = "block"
+  }
 }
+
+
