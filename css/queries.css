@@ -325,7 +325,7 @@
     .slide-image {
         max-height: 40vh;
     }
-    
+
     .sticky {
         display: flex;
     }
@@ -718,6 +718,9 @@
 
 @media only screen and (max-width: 450px) {
 
+    .heading{
+        font-size: 3rem;
+    }
     .hero-box-logo {
         height: 14rem;
         grid-column: 4 / 15;
@@ -735,6 +738,12 @@
         grid-column: 6 / 16;
         width: 65%;
     }
+
+    .slide-description {
+        font-size: 2.4rem;
+    }
+
+
 
 
 
